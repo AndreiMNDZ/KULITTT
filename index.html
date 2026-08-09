@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KULITTTT </title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Karla:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="petals" id="petals"></div>
+
+<audio id="bgMusic" loop preload="auto">
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<button class="music-toggle" id="musicToggle" aria-label="Play music" aria-pressed="false">
+  <span class="music-icon" id="musicIcon">♪</span>
+</button>
+
+<!-- HERO / ENVELOPE -->
+<section class="hero" id="hero">
+  <div class="hero-eyebrow">A letter for you</div>
+  <h1 class="hero-title">I'm <em>sorry</em>,<br>Ashley</h1>
+  <p class="hero-sub">I wrote you something. It's short, but I meant every word of it.</p>
+
+  <div class="envelope-wrap" id="envelope" tabindex="0" role="button" aria-label="Open the letter">
+    <div class="envelope">
+      <div class="letter-peek"></div>
+      <div class="envelope-body"></div>
+      <div class="flap"></div>
+      <div class="seal">✻</div>
+    </div>
+  </div>
+
+  <div class="hero-hint">Tap the envelope to open</div>
+</section>
+
+<!-- LETTER PAGE -->
+<main class="letter-page" id="letterPage">
+  <div class="letter-eyebrow">To the person who matters most</div>
+  <h2 class="letter-heading">I know sorry isn't<br>always enough</h2>
+
+  <article class="letter-body">
+    <p class="letter-salutation">My Babsie,</p>
+
+    <p>Hello mahal, alam kong hindi sapat ang sorry sa mga nagawa ko.</p>
+
+    <p>Sorry dahil nawala yung andrei na nakilala mo and yung pinakita ko.
+      Ang daming nagbago sa loob ng ilang taon na yon and ang dami ding nangyari satin na mostly ikaw lang ang lumalaban.</p>
+
+    <p>Sobrang dami ko din hindi nabigay lalo na satin. Wala akong ginawa kung hindi umalis and hayaan ka magisa.
+       I know im not in my better version now pero nagsisimula naman ako magbago para din sakin and hindi lang din para sa atin. </p>   
+
+    <p class="emph">You deserved better from me. I want to be better for you.</p>
+
+    <p>I'm not asking you to pretend it didn't happen, or to rush how you're feeling right now. I just wanted you to know that I see it clearly, I'm not making excuses, and I'm here — however long that takes.</p>
+
+    <div class="signoff">
+      With all my love, and my apology,
+      <span class="name">Andrei Makulit</span>
+    </div>
+  </article>
+
+  <div class="reasons">
+    <div class="reasons-title">What I'm sorry for</div>
+    <div class="reasons-grid">
+      <div class="reason-card"><span class="reason-mark">01</span>Not listening when it mattered most</div>
+      <div class="reason-card"><span class="reason-mark">02</span>Letting my pride get in the way</div>
+      <div class="reason-card"><span class="reason-mark">03</span>Letting you fight alone</div>
+      <div class="reason-card"><span class="reason-mark">04</span>Leaving when you needed me </div>
+    </div>
+  </div>
+
+  <div class="closing">
+    <div class="flame-wrap">
+      <div class="candle"><div class="flame"></div></div>
+    </div>
+    <p class="closing-text">Take whatever time you need. I'll still be here, and I'll still be sorry, and I'll still be trying.</p>
+    <button class="ask-btn" id="askBtn">Can we talk?</button>
+    <div class="response" id="response"></div>
+  </div>
+
+  <footer class="note">made with love, for you — Andrei Makulit</footer>
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
